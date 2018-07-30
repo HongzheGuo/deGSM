@@ -1,0 +1,10 @@
+prefix=/home/dxzhu/jellyfish-2.1.4
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Jellyfish
+Description: A multi-threaded hash based k-mer counter.
+Version: 2.1.4
+Libs: -L${libdir} -ljellyfish-2.0 -lpthread
+Cflags: -I${includedir}/jellyfish-2.1.4

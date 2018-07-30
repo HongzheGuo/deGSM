@@ -1,0 +1,3 @@
+lib/int128.lo: lib/int128.cc config.h
+
+config.h:

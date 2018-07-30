@@ -1,0 +1,6 @@
+#!/bin/sh
+./jellyfish count -m 23 -o /home/dxzhu/data/project1.24/output -c 40 -s 4G -t 32 /home/dxzhu/1000genome_individuals/bigGenome10.fa
+./jellyfish stats /home/dxzhu/data/project1.24/output
+#./jellyfish dump -c -t -o /home/dxzhu/data/project1.24/out /home/dxzhu/data/project1.24/output
+#rm /home/dxzhu/data/project1.24/output
+#sort -k 1 -t '	' /home/dxzhu/data/project1.24/out -o /home/dxzhu/data/project1.24/out
