@@ -79,7 +79,9 @@ int main(int argc, char *argv[])
 
 	char *jRoot=NULL;
 	char *source = NULL;
-	char *bin = get_bin_dir(argv[0]);
+	char real_path[1024];
+        realpath(argv[0], real_path);
+        char *bin = get_bin_dir(real_path);
 
 	int c = 0;
 	uint8_t com_flag = 0;
