@@ -79,7 +79,9 @@ int main(int argc, char *argv[])
 
 	char *jRoot=NULL;
 	char *source = NULL;
-	char *bin = get_bin_dir(argv[0]);
+	char absolute_path[1024];
+	readlink("/proc/self/exe", absolute_path, sizeof(absolute_path));
+	char *bin = get_bin_dir(absolute_path);
 
 	int c = 0;
 	uint8_t com_flag = 0;
